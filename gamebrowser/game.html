@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Matching Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="timer">Time: <span id="time">00:00</span></div>
+            <div class="score">Moves: <span id="moves">0</span></div>
+            <div class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-checkbox">
+                <label for="dark-mode-checkbox" class="toggle-label">
+                    <span class="toggle-icon">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </span>
+                    <span class="toggle-switch"></span>
+                </label>
+            </div>
+        </div>
+        <div class="game-board"></div>
+        <div class="game-over hidden">
+            <h2>Game Over!</h2>
+            <p>Time taken: <span id="final-time"></span></p>
+            <p>Total moves: <span id="final-moves"></span></p>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> <!-- Add your font th -->
+</body>
+</html>
